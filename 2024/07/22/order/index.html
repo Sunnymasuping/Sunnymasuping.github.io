@@ -19,26 +19,33 @@
   <meta name="author" content="Sunnymasuping">
   <meta name="keywords" content="">
   
-    <meta name="description" content="汽车租赁系统的开发与设计项目概述 开发时间：2024.05 - 2024.06  技术栈：  前端：JavaScript、HTML、CSS，结合 Ajax 实现交互。 后端：基于 Node.js + Express，通过 Service 和 DAO 层 操作 MySQL，使用 Knex.js 构建 SQL。 中间件：CORS、Morgan 等。   项目要求：  打造 用户友好、安全可靠、可扩展且">
+    <meta name="description" content="微信小程序点餐系统项目概述 开发时间：2024.06 - 2024.07  技术栈：Vue2 + Axios + Element UI + Uniapp + Echarts + UView + Uni UI + SpringBoot + MyBatis + MySQL。  项目要求：商家通过 PC 端管理菜品、类目、用户和订单，维持系统的正常运行。顾客通过微信小程序端查看菜品，快速下单、支付并跟踪">
 <meta property="og:type" content="article">
-<meta property="og:title" content="汽车租赁系统的开发与设计">
-<meta property="og:url" content="http://example.com/2024/06/02/car-build/index.html">
+<meta property="og:title" content="微信小程序点餐系统">
+<meta property="og:url" content="http://example.com/2024/07/22/order/index.html">
 <meta property="og:site_name" content="马苏平的博客">
-<meta property="og:description" content="汽车租赁系统的开发与设计项目概述 开发时间：2024.05 - 2024.06  技术栈：  前端：JavaScript、HTML、CSS，结合 Ajax 实现交互。 后端：基于 Node.js + Express，通过 Service 和 DAO 层 操作 MySQL，使用 Knex.js 构建 SQL。 中间件：CORS、Morgan 等。   项目要求：  打造 用户友好、安全可靠、可扩展且">
+<meta property="og:description" content="微信小程序点餐系统项目概述 开发时间：2024.06 - 2024.07  技术栈：Vue2 + Axios + Element UI + Uniapp + Echarts + UView + Uni UI + SpringBoot + MyBatis + MySQL。  项目要求：商家通过 PC 端管理菜品、类目、用户和订单，维持系统的正常运行。顾客通过微信小程序端查看菜品，快速下单、支付并跟踪">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2024-06-02T02:05:09.000Z">
-<meta property="article:modified_time" content="2025-02-27T06:35:57.893Z">
+<meta property="og:image" content="https://raw.githubusercontent.com/Sunnymasuping/img/main/%E5%95%86%E5%AE%B6%E7%AB%AF.jpeg">
+<meta property="og:image" content="https://raw.githubusercontent.com/Sunnymasuping/img/main/%E5%AE%A2%E6%88%B7%E7%AB%AF%E7%99%BB%E5%BD%95%E4%BB%A5%E5%8F%8A%E6%B3%A8%E5%86%8C%E9%A1%B5%E9%9D%A2.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Sunnymasuping/img/main/WPS%E5%9B%BE%E7%89%87(1).jpeg">
+<meta property="article:published_time" content="2024-07-22T04:07:19.000Z">
+<meta property="article:modified_time" content="2025-03-03T03:31:44.560Z">
 <meta property="article:author" content="Sunnymasuping">
-<meta property="article:tag" content="Node.js">
-<meta property="article:tag" content="Express">
-<meta property="article:tag" content="MySQL">
 <meta property="article:tag" content="前端开发">
 <meta property="article:tag" content="后端开发">
+<meta property="article:tag" content="Vue2">
+<meta property="article:tag" content="Uniapp">
+<meta property="article:tag" content="SpringBoot">
+<meta property="article:tag" content="MyBatis">
+<meta property="article:tag" content="微信小程序">
+<meta property="article:tag" content="数据可视化">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/Sunnymasuping/img/main/%E5%95%86%E5%AE%B6%E7%AB%AF.jpeg">
   
   
   
-  <title>汽车租赁系统的开发与设计 - 马苏平的博客</title>
+  <title>微信小程序点餐系统 - 马苏平的博客</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -204,7 +211,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="汽车租赁系统的开发与设计"></span>
+            <span id="subtitle" data-typed-text="微信小程序点餐系统"></span>
           
         </div>
 
@@ -215,8 +222,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2024-06-02 10:05" pubdate>
-          2024年6月2日 上午
+        <time datetime="2024-07-22 12:07" pubdate>
+          2024年7月22日 中午
         </time>
       </span>
     
@@ -227,7 +234,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          309 字
+          820 字
         
       </span>
     
@@ -238,7 +245,7 @@
         
         
         
-          3 分钟
+          7 分钟
         
       </span>
     
@@ -275,43 +282,265 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">汽车租赁系统的开发与设计</h1>
+            <h1 id="seo-header">微信小程序点餐系统</h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="汽车租赁系统的开发与设计"><a href="#汽车租赁系统的开发与设计" class="headerlink" title="汽车租赁系统的开发与设计"></a>汽车租赁系统的开发与设计</h1><h2 id="项目概述"><a href="#项目概述" class="headerlink" title="项目概述"></a>项目概述</h2><ul>
-<li><p><strong>开发时间</strong>：2024.05 - 2024.06</p>
+                <h1 id="微信小程序点餐系统"><a href="#微信小程序点餐系统" class="headerlink" title="微信小程序点餐系统"></a>微信小程序点餐系统</h1><h2 id="项目概述"><a href="#项目概述" class="headerlink" title="项目概述"></a>项目概述</h2><ul>
+<li><p><strong>开发时间</strong>：2024.06 - 2024.07</p>
 </li>
-<li><p><strong>技术栈</strong>：</p>
-<ul>
-<li><strong>前端</strong>：JavaScript、HTML、CSS，结合 <strong>Ajax</strong> 实现交互。</li>
-<li><strong>后端</strong>：基于 <strong>Node.js + Express</strong>，通过 <strong>Service 和 DAO 层</strong> 操作 <strong>MySQL</strong>，使用 <strong>Knex.js</strong> 构建 SQL。</li>
-<li><strong>中间件</strong>：CORS、Morgan 等。</li>
-</ul>
+<li><p><strong>技术栈</strong>：Vue2 + Axios + Element UI + Uniapp + Echarts + UView + Uni UI + SpringBoot + MyBatis + MySQL。</p>
 </li>
-<li><p><strong>项目要求</strong>：</p>
-<ul>
-<li>打造 <strong>用户友好、安全可靠、可扩展且管理高效</strong> 的汽车租赁系统。</li>
-<li>提供 <strong>车辆租赁核心服务</strong>，涵盖 <strong>用户、订单、车辆管理及系统配置</strong>。</li>
-</ul>
+<li><p><strong>项目要求</strong>：<br>商家通过 PC 端管理菜品、类目、用户和订单，维持系统的正常运行。顾客通过微信小程序端查看菜品，快速下单、支付并跟踪订单，同时可以提交反馈。</p>
+<p><img src="https://raw.githubusercontent.com/Sunnymasuping/img/main/%E5%95%86%E5%AE%B6%E7%AB%AF.jpeg" srcset="/img/loading.gif" lazyload alt="商家端"><br><img src="https://raw.githubusercontent.com/Sunnymasuping/img/main/%E5%AE%A2%E6%88%B7%E7%AB%AF%E7%99%BB%E5%BD%95%E4%BB%A5%E5%8F%8A%E6%B3%A8%E5%86%8C%E9%A1%B5%E9%9D%A2.png" srcset="/img/loading.gif" lazyload alt="客户端封面"></p>
 </li>
 </ul>
-<h2 id="责任描述"><a href="#责任描述" class="headerlink" title="责任描述"></a>责任描述</h2><h3 id="1-前端界面与交互开发"><a href="#1-前端界面与交互开发" class="headerlink" title="1. 前端界面与交互开发"></a>1. 前端界面与交互开发</h3><ul>
-<li>使用 <strong>HTML + CSS + JavaScript</strong> 构建租赁系统前端界面。</li>
-<li>结合 <strong>Ajax</strong> 进行动态数据交互，实现订单提交、车辆查询、用户管理等功能。</li>
+<h2 id="基于微信点餐系统的设计与实现"><a href="#基于微信点餐系统的设计与实现" class="headerlink" title="基于微信点餐系统的设计与实现"></a>基于微信点餐系统的设计与实现</h2><h3 id="1-总体设计"><a href="#1-总体设计" class="headerlink" title="1. 总体设计"></a>1. 总体设计</h3><h4 id="1-1-系统功能整体设计结构图"><a href="#1-1-系统功能整体设计结构图" class="headerlink" title="1.1 系统功能整体设计结构图"></a>1.1 系统功能整体设计结构图</h4><p><img src="https://raw.githubusercontent.com/Sunnymasuping/img/main/WPS%E5%9B%BE%E7%89%87(1).jpeg" srcset="/img/loading.gif" lazyload alt="系统功能整体设计"></p>
+<h4 id="1-2-系统架构设计"><a href="#1-2-系统架构设计" class="headerlink" title="1.2 系统架构设计"></a>1.2 系统架构设计</h4><h5 id="小程序端"><a href="#小程序端" class="headerlink" title="小程序端"></a><strong>小程序端</strong></h5><ul>
+<li><strong>技术选型</strong>：Uniapp, UView, Uni UI</li>
+<li><strong>功能</strong>：提供菜品浏览、下单支付、订单查看、反馈提交和个人信息修改功能。</li>
 </ul>
-<h3 id="2-后端业务实现"><a href="#2-后端业务实现" class="headerlink" title="2. 后端业务实现"></a>2. 后端业务实现</h3><ul>
-<li><strong>Node.js + Express</strong> 处理业务逻辑，实现 <strong>用户、车辆、订单管理</strong>。</li>
-<li>通过 <strong>Service 层</strong> 进行业务封装，<strong>DAO 层</strong> 操作 MySQL 数据库。</li>
-<li>使用 <strong>Knex.js</strong> 构建 SQL 语句，提高数据库操作效率。</li>
+<h5 id="商家管理平台"><a href="#商家管理平台" class="headerlink" title="商家管理平台"></a><strong>商家管理平台</strong></h5><ul>
+<li><strong>技术选型</strong>：Vue 2, Axios, Element UI</li>
+<li><strong>功能</strong>：提供用户管理、菜品管理、订单管理、轮播图管理、销售数据统计和登录功能。</li>
 </ul>
-<h3 id="3-系统集成与优化"><a href="#3-系统集成与优化" class="headerlink" title="3. 系统集成与优化"></a>3. 系统集成与优化</h3><ul>
-<li>结合 <strong>CORS</strong> 处理跨域请求，确保数据安全和访问稳定。</li>
-<li>采用 <strong>Morgan</strong> 进行日志管理，监控系统运行状态。</li>
-<li>参与 <strong>多环节测试</strong>，优化系统性能，提升用户体验。</li>
+<h5 id="后端服务"><a href="#后端服务" class="headerlink" title="后端服务"></a><strong>后端服务</strong></h5><ul>
+<li><strong>技术选型</strong>：Spring Boot, MyBatis</li>
+<li><strong>功能</strong>：提供 API 接口，处理业务逻辑，存储和管理数据，并保证系统安全与高性能。</li>
 </ul>
-<h2 id="代码仓库"><a href="#代码仓库" class="headerlink" title="代码仓库"></a>代码仓库</h2><p><a target="_blank" rel="noopener" href="https://github.com/Sunnymasuping/car">GitHub 项目地址</a></p>
+<h4 id="1-3-功能模块划分"><a href="#1-3-功能模块划分" class="headerlink" title="1.3 功能模块划分"></a>1.3 功能模块划分</h4><p><strong>小程序端功能模块</strong></p>
+<ol>
+<li><strong>搜索菜品模块</strong>：提供菜品搜索功能。</li>
+<li><strong>浏览菜品模块</strong>：展示所有菜品信息，按类别浏览。</li>
+<li><strong>购物车模块</strong>：管理用户选择的菜品。</li>
+<li><strong>订单模块</strong>：处理用户订单，支持下单和支付。</li>
+<li><strong>反馈模块</strong>：用户提交反馈意见。</li>
+<li><strong>个人信息模块</strong>：用户修改个人资料。</li>
+</ol>
+<p><strong>商家管理平台功能模块</strong></p>
+<ol>
+<li><strong>登录模块</strong>：管理员身份验证。</li>
+<li><strong>统计模块</strong>：展示销售数据和报表。</li>
+<li><strong>用户管理模块</strong>：管理用户信息。</li>
+<li><strong>菜品类目管理模块</strong>：管理菜品分类。</li>
+<li><strong>菜品信息管理模块</strong>：管理具体菜品信息。</li>
+<li><strong>订单管理模块</strong>：处理和管理订单。</li>
+<li><strong>轮播图管理模块</strong>：管理首页轮播图片。</li>
+</ol>
+<p><strong>后端服务功能模块</strong></p>
+<ol>
+<li><strong>用户管理模块</strong>：处理用户注册、登录和信息管理。</li>
+<li><strong>菜品管理模块</strong>：处理菜品分类和信息管理。</li>
+<li><strong>订单管理模块</strong>：处理订单的创建、更新和查询。</li>
+<li><strong>统计分析模块</strong>：生成销售数据，用于图表展示。</li>
+<li><strong>反馈管理模块</strong>：处理用户反馈信息。</li>
+</ol>
+<h3 id="1-4-数据库设计"><a href="#1-4-数据库设计" class="headerlink" title="1.4 数据库设计"></a>1.4 数据库设计</h3><h4 id="数据库商家信息表-表-3-1"><a href="#数据库商家信息表-表-3-1" class="headerlink" title="数据库商家信息表 (表 3.1)"></a>数据库商家信息表 (表 3.1)</h4><table>
+<thead>
+<tr>
+<th>字段</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>aid</td>
+<td>管理员 ID</td>
+</tr>
+<tr>
+<td>apwd</td>
+<td>密码</td>
+</tr>
+<tr>
+<td>aname</td>
+<td>管理员名称</td>
+</tr>
+<tr>
+<td>aphone</td>
+<td>管理员电话</td>
+</tr>
+<tr>
+<td>aaddress</td>
+<td>商家地址</td>
+</tr>
+</tbody></table>
+<h4 id="数据库顾客信息表-表-3-2"><a href="#数据库顾客信息表-表-3-2" class="headerlink" title="数据库顾客信息表 (表 3.2)"></a>数据库顾客信息表 (表 3.2)</h4><table>
+<thead>
+<tr>
+<th>字段</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>cid</td>
+<td>顾客 ID</td>
+</tr>
+<tr>
+<td>cpwd</td>
+<td>密码</td>
+</tr>
+<tr>
+<td>cname</td>
+<td>顾客姓名</td>
+</tr>
+<tr>
+<td>csex</td>
+<td>顾客性别</td>
+</tr>
+<tr>
+<td>cbirth</td>
+<td>顾客生日</td>
+</tr>
+<tr>
+<td>cphone</td>
+<td>手机号</td>
+</tr>
+<tr>
+<td>cstatus</td>
+<td>审核状态</td>
+</tr>
+</tbody></table>
+<h4 id="数据库菜单信息表-表-3-3"><a href="#数据库菜单信息表-表-3-3" class="headerlink" title="数据库菜单信息表 (表 3.3)"></a>数据库菜单信息表 (表 3.3)</h4><table>
+<thead>
+<tr>
+<th>字段</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>dishid</td>
+<td>菜品 ID</td>
+</tr>
+<tr>
+<td>dishName</td>
+<td>菜品名称</td>
+</tr>
+<tr>
+<td>type</td>
+<td>菜品种类</td>
+</tr>
+<tr>
+<td>specification</td>
+<td>份量</td>
+</tr>
+<tr>
+<td>price</td>
+<td>菜品单价</td>
+</tr>
+<tr>
+<td>picture</td>
+<td>菜品图片地址</td>
+</tr>
+<tr>
+<td>sale</td>
+<td>菜品销量</td>
+</tr>
+</tbody></table>
+<h4 id="数据库订单信息表-表-3-4"><a href="#数据库订单信息表-表-3-4" class="headerlink" title="数据库订单信息表 (表 3.4)"></a>数据库订单信息表 (表 3.4)</h4><table>
+<thead>
+<tr>
+<th>字段</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>oid</td>
+<td>订单 ID</td>
+</tr>
+<tr>
+<td>ocontent</td>
+<td>订单内容</td>
+</tr>
+<tr>
+<td>createtime</td>
+<td>订单创建时间</td>
+</tr>
+<tr>
+<td>overtime</td>
+<td>订单完成时间</td>
+</tr>
+<tr>
+<td>ostatus</td>
+<td>订单状态</td>
+</tr>
+<tr>
+<td>remark</td>
+<td>备注</td>
+</tr>
+<tr>
+<td>sum</td>
+<td>总价</td>
+</tr>
+<tr>
+<td>cid</td>
+<td>顾客 ID</td>
+</tr>
+<tr>
+<td>way</td>
+<td>用餐方式（堂食，打包）</td>
+</tr>
+</tbody></table>
+<h4 id="数据库留言信息表-表-3-5"><a href="#数据库留言信息表-表-3-5" class="headerlink" title="数据库留言信息表 (表 3.5)"></a>数据库留言信息表 (表 3.5)</h4><table>
+<thead>
+<tr>
+<th>字段</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>rid</td>
+<td>留言 ID</td>
+</tr>
+<tr>
+<td>rscore</td>
+<td>评分（极差，差，中，良，好）</td>
+</tr>
+<tr>
+<td>rcontent</td>
+<td>留言内容</td>
+</tr>
+<tr>
+<td>rtime</td>
+<td>留言时间</td>
+</tr>
+<tr>
+<td>cid</td>
+<td>顾客 ID</td>
+</tr>
+</tbody></table>
+<h4 id="数据库回复信息表-表-3-6"><a href="#数据库回复信息表-表-3-6" class="headerlink" title="数据库回复信息表 (表 3.6)"></a>数据库回复信息表 (表 3.6)</h4><table>
+<thead>
+<tr>
+<th>字段</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>pid</td>
+<td>回复留言 ID</td>
+</tr>
+<tr>
+<td>pcontent</td>
+<td>回复内容</td>
+</tr>
+<tr>
+<td>ptime</td>
+<td>回复时间</td>
+</tr>
+<tr>
+<td>cid</td>
+<td>顾客 ID</td>
+</tr>
+<tr>
+<td>aid</td>
+<td>商家 ID</td>
+</tr>
+<tr>
+<td>rid</td>
+<td>留言 ID</td>
+</tr>
+</tbody></table>
+<h2 id="代码仓库"><a href="#代码仓库" class="headerlink" title="代码仓库"></a>代码仓库</h2><p><a target="_blank" rel="noopener" href="https://github.com/Sunnymasuping/ordering-system">GitHub 项目地址</a></p>
 
                 
               </div>
@@ -352,15 +581,21 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/Node-js/" class="print-no-link">#Node.js</a>
-      
-        <a href="/tags/Express/" class="print-no-link">#Express</a>
-      
-        <a href="/tags/MySQL/" class="print-no-link">#MySQL</a>
-      
         <a href="/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/" class="print-no-link">#前端开发</a>
       
         <a href="/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/" class="print-no-link">#后端开发</a>
+      
+        <a href="/tags/Vue2/" class="print-no-link">#Vue2</a>
+      
+        <a href="/tags/Uniapp/" class="print-no-link">#Uniapp</a>
+      
+        <a href="/tags/SpringBoot/" class="print-no-link">#SpringBoot</a>
+      
+        <a href="/tags/MyBatis/" class="print-no-link">#MyBatis</a>
+      
+        <a href="/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/" class="print-no-link">#微信小程序</a>
+      
+        <a href="/tags/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/" class="print-no-link">#数据可视化</a>
       
     </div>
   
@@ -372,8 +607,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>汽车租赁系统的开发与设计</div>
-      <div>http://example.com/2024/06/02/car-build/</div>
+      <div>微信小程序点餐系统</div>
+      <div>http://example.com/2024/07/22/order/</div>
     </div>
     <div class="license-meta">
       
@@ -385,7 +620,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2024年6月2日</div>
+          <div>2024年7月22日</div>
         </div>
       
       
@@ -417,9 +652,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2024/07/22/order/" title="微信小程序点餐系统">
+                      <a href="/2025/02/26/personal-resume-build/" title="马苏平的个人简历">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">微信小程序点餐系统</span>
+                        <span class="hidden-mobile">马苏平的个人简历</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -427,8 +662,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2024/03/12/storetextlab/" title="仓储管理与文字分析系统">
-                        <span class="hidden-mobile">仓储管理与文字分析系统</span>
+                      <a href="/2024/06/02/car-build/" title="汽车租赁系统的开发与设计">
+                        <span class="hidden-mobile">汽车租赁系统的开发与设计</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
