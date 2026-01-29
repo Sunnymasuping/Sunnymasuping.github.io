@@ -281,7 +281,7 @@
             
               <div class="markdown-body">
                 
-                <h1 id="Websocket-WebRTC-技术文档"><a href="#Websocket-WebRTC-技术文档" class="headerlink" title="Websocket &amp; WebRTC 技术文档"></a>Websocket &amp; WebRTC 技术文档</h1><h2 id="Websocket"><a href="#Websocket" class="headerlink" title="Websocket"></a>Websocket</h2><h3 id="应用场景"><a href="#应用场景" class="headerlink" title="应用场景"></a>应用场景</h3><ul>
+                <h1 id="Websocket-amp-WebRTC-技术文档"><a href="#Websocket-amp-WebRTC-技术文档" class="headerlink" title="Websocket &amp; WebRTC 技术文档"></a>Websocket &amp; WebRTC 技术文档</h1><h2 id="Websocket"><a href="#Websocket" class="headerlink" title="Websocket"></a>Websocket</h2><h3 id="应用场景"><a href="#应用场景" class="headerlink" title="应用场景"></a>应用场景</h3><ul>
 <li>服务器主动推送到客户端</li>
 <li>双端通信</li>
 <li>即时通讯</li>
@@ -306,12 +306,12 @@
 <li>WebSocket 的数据帧是有序的。</li>
 </ul>
 <h4 id="帧类型："><a href="#帧类型：" class="headerlink" title="帧类型："></a>帧类型：</h4><ol>
-<li><strong>Opcode &#x3D;&#x3D; 0 继续：</strong><br>表示此帧是一个继续帧，需要拼接在上一个收到的帧之后，来组成一个完整的消息。</li>
-<li><strong>Opcode &#x3D;&#x3D; 1 文本帧：</strong><br>表示文本数据。</li>
-<li><strong>Opcode &#x3D;&#x3D; 2 二进制帧：</strong><br>表示二进制数据。</li>
-<li><strong>Opcode &#x3D;&#x3D; 8 关闭连接：</strong><br>发送此帧的一方表示关闭连接。</li>
-<li><strong>Opcode &#x3D;&#x3D; 9 Ping：</strong><br>一方发送 Ping 帧，另一方应立即响应 Pong。</li>
-<li><strong>Opcode &#x3D;&#x3D; 10 Pong：</strong><br>Pong 帧响应 Ping 请求。</li>
+<li><strong>Opcode == 0 继续：</strong><br>表示此帧是一个继续帧，需要拼接在上一个收到的帧之后，来组成一个完整的消息。</li>
+<li><strong>Opcode == 1 文本帧：</strong><br>表示文本数据。</li>
+<li><strong>Opcode == 2 二进制帧：</strong><br>表示二进制数据。</li>
+<li><strong>Opcode == 8 关闭连接：</strong><br>发送此帧的一方表示关闭连接。</li>
+<li><strong>Opcode == 9 Ping：</strong><br>一方发送 Ping 帧，另一方应立即响应 Pong。</li>
+<li><strong>Opcode == 10 Pong：</strong><br>Pong 帧响应 Ping 请求。</li>
 </ol>
 <h3 id="WebSocket-vs-HTTP-协议"><a href="#WebSocket-vs-HTTP-协议" class="headerlink" title="WebSocket vs HTTP 协议"></a>WebSocket vs HTTP 协议</h3><ul>
 <li><strong>HTTP 协议是半双工</strong>，WebSocket 是全双工。</li>
